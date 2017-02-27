@@ -216,3 +216,8 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 " Open all cmd args in new tabs
 " Needs to be HERE otherwise other tabs will not have all the .vimrc loaded
 execute ":silent tab all"
+
+" Mac specific
+set clipboard=unnamed
+nnoremap ; :
+let g:syntastic_javascript_checkers = ['standard']
